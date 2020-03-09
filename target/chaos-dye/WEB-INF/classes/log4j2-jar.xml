@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+  <Properties>
+    <Property name="logPath">target/logs</Property>
+    <Property name="rollingFileName">jar</Property>
+  </Properties>
+  <Appenders>
+
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} %t [%p] %c{1} (%F:%L) %msg%n"/>
+<!--      <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} %t [%p] %c{1} (%F:%L) %msg%ex{0}%n"/>-->
+      <!--      <EnhancedPatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c:%L - %m%n%throwable{0}"/>-->
+    </Console>
+
+    <File name="INFO" fileName="${logPath}/${rollingFileName}.log">
+      <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} %t [%p] %c{1} (%F:%L) %msg%n" />
+    </File>
+
+    <File name="WARN" fileName="${logPath}/${rollingFileName}-warn.log">
+      <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} %t [%p] %c{1} (%F:%L) %msg%n" />
+      <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+    </File>
+
+    <File name="ERROR" fileName="${logPath}/${rollingFileName}-error.log">
+      <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} %t [%p] %c{1} (%F:%L) %msg%n" />
+      <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+    </File>
+
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <appender-ref ref="Console"/>
+      <appender-ref ref="INFO"/>
+      <appender-ref ref="WARN"/>
+      <appender-ref ref="ERROR"/>
+    </Root>
+  </Loggers>
+</Configuration>
+

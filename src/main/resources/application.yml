@@ -1,0 +1,11 @@
+spring:
+  profiles: war
+server:
+  port: 8080
+
+---
+
+spring:
+  profiles: jar
+server:
+  port: 8081

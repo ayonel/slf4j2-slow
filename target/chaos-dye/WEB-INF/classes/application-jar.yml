@@ -1,0 +1,6 @@
+error:
+  word: jar
+
+logging:
+  config: classpath:log4j2-jar.xml
+

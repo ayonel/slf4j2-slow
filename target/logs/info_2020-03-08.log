@@ -1,0 +1,24 @@
+2020/03/08 00:31:29.005 main [INFO] Application (StartupInfoLogger.java:48) Starting Application on ayonel-macdeMacBook-Pro.local with PID 41224 (/Users/ayonel/workspace/mt_java/log4j2slow/target/classes started by ayonel in /Users/ayonel/workspace/mt_java/log4j2slow)
+2020/03/08 00:31:29.010 main [INFO] Application (SpringApplication.java:593) No active profile set, falling back to default profiles: default
+2020/03/08 00:31:29.077 main [INFO] AnnotationConfigEmbeddedWebApplicationContext (AbstractApplicationContext.java:583) Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4189d70b: startup date [Sun Mar 08 00:31:29 CST 2020]; root of context hierarchy
+2020/03/08 00:31:29.251 background-preinit [INFO] Version (Version.java:30) HV000001: Hibernate Validator 5.3.6.Final
+2020/03/08 00:31:30.218 main [INFO] TomcatEmbeddedServletContainer (TomcatEmbeddedServletContainer.java:89) Tomcat initialized with port(s): 8080 (http)
+2020/03/08 00:31:30.335 localhost-startStop-1 [INFO] ContextLoader (EmbeddedWebApplicationContext.java:276) Root WebApplicationContext: initialization completed in 1260 ms
+2020/03/08 00:31:30.487 localhost-startStop-1 [INFO] ServletRegistrationBean (ServletRegistrationBean.java:190) Mapping servlet: 'dispatcherServlet' to [/]
+2020/03/08 00:31:30.494 localhost-startStop-1 [INFO] FilterRegistrationBean (AbstractFilterRegistrationBean.java:258) Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/03/08 00:31:30.495 localhost-startStop-1 [INFO] FilterRegistrationBean (AbstractFilterRegistrationBean.java:258) Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/03/08 00:31:30.495 localhost-startStop-1 [INFO] FilterRegistrationBean (AbstractFilterRegistrationBean.java:258) Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/03/08 00:31:30.495 localhost-startStop-1 [INFO] FilterRegistrationBean (AbstractFilterRegistrationBean.java:258) Mapping filter: 'requestContextFilter' to: [/*]
+2020/03/08 00:31:30.872 main [INFO] RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:534) Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4189d70b: startup date [Sun Mar 08 00:31:29 CST 2020]; root of context hierarchy
+2020/03/08 00:31:30.960 main [INFO] RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:543) Mapped "{[/test/hello/{name}],methods=[GET]}" onto public java.lang.Object me.ayonel.MainController.queryJob(java.lang.String)
+2020/03/08 00:31:30.963 main [INFO] RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:543) Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/03/08 00:31:30.964 main [INFO] RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:543) Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/03/08 00:31:31.003 main [INFO] SimpleUrlHandlerMapping (AbstractUrlHandlerMapping.java:362) Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/03/08 00:31:31.003 main [INFO] SimpleUrlHandlerMapping (AbstractUrlHandlerMapping.java:362) Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/03/08 00:31:31.021 main [INFO] ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:273) Detected @ExceptionHandler methods in webExceptionHandler
+2020/03/08 00:31:31.056 main [INFO] SimpleUrlHandlerMapping (AbstractUrlHandlerMapping.java:362) Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/03/08 00:31:31.286 main [INFO] AnnotationMBeanExporter (MBeanExporter.java:431) Registering beans for JMX exposure on startup
+2020/03/08 00:31:31.398 main [INFO] TomcatEmbeddedServletContainer (TomcatEmbeddedServletContainer.java:201) Tomcat started on port(s): 8080 (http)
+2020/03/08 00:31:31.418 main [INFO] Application (StartupInfoLogger.java:57) Started Application in 2.853 seconds (JVM running for 3.809)
+2020/03/08 00:32:01.244 Thread-3 [INFO] AnnotationConfigEmbeddedWebApplicationContext (AbstractApplicationContext.java:984) Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4189d70b: startup date [Sun Mar 08 00:31:29 CST 2020]; root of context hierarchy
+2020/03/08 00:32:01.248 Thread-3 [INFO] AnnotationMBeanExporter (MBeanExporter.java:449) Unregistering JMX-exposed beans on shutdown
