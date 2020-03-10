@@ -26,7 +26,9 @@ public class WebExceptionHandler extends ResponseEntityExceptionHandler {
      */
     @ExceptionHandler(value = {ServiceException.class})
     public final ResponseEntity<WebRestResult> handleServiceException(ServiceException ex, WebRequest webRequest) {
+        // STEP1: 打印错误日志
         log.error("happened service exception!", ex);
+        // STEP2: 包装错误信息，并返回
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType(MediaType.APPLICATION_JSON_UTF8_VALUE));
         WebRestResult restResult = new WebRestResult(-1, ex.getMessage(), null);
